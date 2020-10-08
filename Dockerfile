@@ -23,3 +23,5 @@ RUN apt-get update \
 	libc6.1-dev-alpha-cross gcc-powerpc64-linux-gnu rsync libelf-dev \
 	wget liblz4-tool \
  && apt-get clean
+COPY build.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
