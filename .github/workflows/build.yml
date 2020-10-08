@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: 'Build'
         id: build
-        uses: jsastriawan/kernel-builder@master
+        uses: jsastriawan/kernel-builder@main
