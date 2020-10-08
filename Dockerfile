@@ -24,4 +24,5 @@ RUN apt-get update \
 	wget liblz4-tool \
  && apt-get clean
 COPY build.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
