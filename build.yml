@@ -1,0 +1,12 @@
+# build.yml
+name: Auto builder
+on: push
+  
+description: 'Automatically build kernel on config changes'
+
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
